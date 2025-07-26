@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>⚠️ Warning - Hacked</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      color: red;
+      font-family: 'Courier New', Courier, monospace;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .warning-symbol {
+      font-size: 120px;
+      animation: pulse 1.5s infinite;
+      margin-bottom: 20px;
+    }
+
+    .message {
+      font-size: 36px;
+      animation: blink 1s infinite;
+    }
+
+    .info {
+      margin-top: 30px;
+      font-size: 22px;
+      color: white;
+      line-height: 1.6;
+    }
+
+    .reset-button {
+      margin-top: 40px;
+      padding: 15px 40px;
+      font-size: 22px;
+      background-color: red;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+
+    .reset-button:hover {
+      background-color: darkred;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.2); opacity: 0.5; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="warning-symbol">⚠️</div>
+  <div class="message">YOUR ACCOUNT HAS BEEN HACKED</div>
+
+  <div class="info">
+    <p>YOUR EMAIL ID: ruthrasanthanam2005@gmail.com</p>
+    <p>YOUR NUMBER: 8825909526</p>
+    <p>YOUR ADDRESS: No.27, Gopal Chetty Street</p>
+    <p>YOUR IMEI NUMBER: 861536030196001</p>
+  </div>
+
+  <button class="reset-button" onclick="window.open('https://llamacoder.together.ai/share/v2/rEPzSxRXK2dadycF', '_blank')">
+    TO RESET
+  </button>
+
+  <script>
+    // Simulate infinite C++ loop in console
+    setInterval(() => {
+      console.log("⚠️ YOUR ACCOUNT HAS BEEN HACKED");
+    }, 500);
+
+    // Fullscreen trigger on load
+    document.addEventListener("DOMContentLoaded", () => {
+      const elem = document.documentElement;
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen().catch(() => {});
+      }
+    });
+  </script>
+
+</body>
+</html>
